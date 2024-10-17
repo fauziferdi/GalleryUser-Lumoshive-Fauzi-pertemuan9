@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif; /* Menggunakan font yang lebih modern */
+  line-height: 1.6;
+  margin: 20px;
+}
+
+.center-div {
+  max-width: 1200px; /* Membatasi lebar maksimum container */
+  margin: 0 auto; /* Membuat container berada di tengah */
+  padding: 20px;
+}
+.text-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profil-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.gallery-item p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-input {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  box-sizing: border-box;
+}
